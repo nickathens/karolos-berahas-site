@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick Athens | Film Composer</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Nick Athens is a film composer based in London, creating original scores for feature films, shorts, and documentaries. Credits include Gorgonà (Venice Film Festival), Light Falls, and Mount Athos.">
+    <meta name="keywords" content="Nick Athens, film composer, film score, movie soundtrack, London composer, original score, Gorgonà, Light Falls, Mount Athos">
+    <meta name="author" content="Nick Athens">
+    <link rel="canonical" href="https://nick-athens.com/">
+
+    <!-- Open Graph / Social Media Preview -->
+    <meta property="og:title" content="Nick Athens | Film Composer">
+    <meta property="og:description" content="Film composer based in London. Original scores for features, shorts, and documentaries.">
+    <meta property="og:image" content="https://nick-athens.com/images/og-image.png">
+    <meta property="og:url" content="https://nick-athens.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Nick Athens">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nick Athens | Film Composer">
+    <meta name="twitter:description" content="Film composer based in London. Original scores for features, shorts, and documentaries.">
+    <meta name="twitter:image" content="https://nick-athens.com/images/og-image.png">
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nick Athens",
+        "alternateName": "Nicholas Athens",
+        "url": "https://nick-athens.com",
+        "image": "https://nick-athens.com/images/og-image.png",
+        "jobTitle": "Film Composer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Self-employed"
+        },
+        "sameAs": [
+            "https://www.imdb.com/name/nm8362146/",
+            "https://www.instagram.com/nickathens/"
+        ],
+        "knowsAbout": ["Film Scoring", "Music Composition", "Original Soundtrack"],
+        "workLocation": {
+            "@type": "Place",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "London",
+                "addressCountry": "UK"
+            }
+        }
+    }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="synth-controls">
+            <div class="synth-volume">
+                <svg class="synth-volume-icon" id="synthVolumeIcon" viewBox="0 0 24 24" style="cursor: pointer">
+                    <path class="speaker" d="M3 9v6h4l5 5V4L7 9H3z"/>
+                    <path class="waves" d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                    <path class="muted" d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" style="display:none"/>
+                </svg>
+                <input type="range" class="synth-volume-slider" id="synthVolumeSlider" min="0" max="100" value="50" title="Grid synth volume">
+            </div>
+            <label class="harmony-toggle" title="Smart Harmony - notes adapt to what's playing">
+                <input type="checkbox" id="harmonyToggle">
+                <span class="harmony-toggle-slider"></span>
+                <span class="harmony-toggle-label">Harmony</span>
+            </label>
+        </div>
+        <div class="nav-links">
+            <a href="#film">Film</a>
+            <a href="#solo">Solo</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-grid" id="heroGrid"></div>
+    </section>
+
+    <section class="section film" id="film">
+        <h2 class="section-title">Film</h2>
+        <div class="film-grid">
+            <article class="film-card" data-year="2025" data-tracks='[{"title":"Dance","src":"audio/gorgona/01-dance.mp3"},{"title":"Hip Hop one","src":"audio/gorgona/02-hip-hop-one.mp3"},{"title":"Hip Hop two","src":"audio/gorgona/03-hip-hop-two.mp3"},{"title":"Vanilla","src":"audio/gorgona/04-vanilla.mp3"},{"title":"Bike Ride","src":"audio/gorgona/05-bike-ride.mp3"}]'>
+                <div class="film-poster">
+                    <img src="images/films/gorgona.jpg" alt="Gorgonà" onerror="this.src='images/placeholder.svg'">
+                </div>
+                <div class="film-info">
+                    <h3>Gorgonà</h3>
+                    <span class="film-collab">with Ilias Kampanis & Karolos Berahas</span>
+                    <span class="film-year">2025</span>
+                    <span class="film-note">Venice Film Festival</span>
+                </div>
+            </article>
+            <article class="film-card" data-year="2025" data-tracks='[{"title":"Carcass OST","src":"audio/carcass-soundtrack.mp3"}]'>
+                <div class="film-poster">
+                    <img src="images/films/carcass.jpg" alt="Carcass" onerror="this.src='images/placeholder.svg'">
+                </div>
+                <div class="film-info">
+                    <h3>Carcass</h3>
+                    <span class="film-year">2025</span>
+                    <span class="film-note">Short</span>
+                </div>
+            </article>
+            <article class="film-card" data-year="2024" data-tracks='[{"title":"What Mary Didnt Know OST","src":"audio/what-mary-didnt-know.mp3"}]'>
+                <div class="film-poster">
+                    <img src="images/films/what-mary-didnt-know.jpg" alt="What Mary Didn't Know" onerror="this.src='images/placeholder.svg'">
+                </div>
+                <div class="film-info">
+                    <h3>What Mary Didn't Know</h3>
+                    <span class="film-collab">with Ilias Kampanis & Karolos Berahas</span>
+                    <span class="film-year">2024</span>
+                </div>
+            </article>
+            <article class="film-card" data-year="2023" data-tracks='[{"title":"Two of Us","src":"audio/light-falls/01-two-of-us.mp3"},{"title":"Clara","src":"audio/light-falls/02-clara.mp3"},{"title":"One String","src":"audio/light-falls/03-one-string.mp3"},{"title":"Sandoor","src":"audio/light-falls/04-sandoor.mp3"},{"title":"Edge","src":"audio/light-falls/05-edge.mp3"},{"title":"Ela","src":"audio/light-falls/06-ela.mp3"},{"title":"Hangr","src":"audio/light-falls/07-hangr.mp3"},{"title":"Moj Hapsane","src":"audio/light-falls/08-moj-hapsane.mp3"}]'>
+                <div class="film-poster">
+                    <img src="images/films/light-falls.jpg" alt="Light Falls" onerror="this.src='images/placeholder.svg'">
+                </div>
+                <div class="film-info">
+                    <h3>Light Falls</h3>
+                    <span class="film-year">2023</span>
+                </div>
+            </article>
+            <article class="film-card" data-year="2023" data-tracks='[{"title":"Super OST","src":"audio/super-ost.mp3"}]'>
+                <div class="film-poster">
+                    <img src="images/films/super.jpg" alt="Super" onerror="this.src='images/placeholder.svg'">
+                </div>
+                <div class="film-info">
+                    <h3>Super</h3>
+                    <span class="film-collab">with Karolos Berahas</span>
+                    <span class="film-year">2023</span>
+                    <span class="film-note">Short</span>
+                </div>
+            </article>
+            <article class="film-card" data-year="2021" data-tracks='[{"title":"Crossroads (The Stone Birds)","src":"audio/a-summer-place/01-crossroads.mp3"}]'>
+                <div class="film-poster">
+                    <img src="images/films/a-summer-place.jpg" alt="A Summer Place" onerror="this.src='images/placeholder.svg'">
+                </div>
+                <div class="film-info">
+                    <h3>A Summer Place</h3>
+                    <span class="film-collab">with Karolos Berahas</span>
+                    <span class="film-year">2021</span>
+                    <span class="film-note">Short</span>
+                </div>
+            </article>
+            <article class="film-card" data-year="2019" data-tracks='[{"title":"Mount Athos OST","src":"audio/athos-ost/01-mount-athos-ost.mp3"}]'>
+                <div class="film-poster">
+                    <img src="images/films/mount-athos.jpg" alt="Mount Athos" onerror="this.src='images/placeholder.svg'">
+                </div>
+                <div class="film-info">
+                    <h3>Mount Athos</h3>
+                    <span class="film-year">2019</span>
+                    <span class="film-note">Athens Recording Orchestra</span>
+                </div>
+            </article>
+            <article class="film-card" data-year="2017" data-tracks='[{"title":"9 to 5 OST","src":"audio/nine-to-five-ost/01-nine-to-five-ost.mp3"}]'>
+                <div class="film-poster">
+                    <img src="images/films/nine-to-five.jpg" alt="Nine to Five" onerror="this.src='images/placeholder.svg'">
+                </div>
+                <div class="film-info">
+                    <h3>Nine to Five</h3>
+                    <span class="film-collab">with Maiken Sundby</span>
+                    <span class="film-year">2017</span>
+                    <span class="film-note">Short</span>
+                </div>
+            </article>
+            <article class="film-card" data-year="2016" data-tracks='[{"title":"A Beautiful Day OST","src":"audio/a-beautiful-day-ost.mp3"}]'>
+                <div class="film-poster">
+                    <img src="images/films/a-beautiful-day.jpg" alt="A Beautiful Day" onerror="this.src='images/placeholder.svg'">
+                </div>
+                <div class="film-info">
+                    <h3>A Beautiful Day</h3>
+                    <span class="film-year">2016</span>
+                    <span class="film-note">Short</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section solo" id="solo">
+        <h2 class="section-title">Solo</h2>
+
+        <div class="solo-projects-row">
+            <div class="solo-project">
+                <h3 class="subsection-title">Of Embla</h3>
+                <div class="embla-photo" data-tracks='[{"title":"Walking Dead","src":"audio/of-embla/r-01-walking-dead.mp3"},{"title":"Without you","src":"audio/of-embla/r-02-without-you.mp3"},{"title":"5 Minutes","src":"audio/of-embla/r-03-5-minutes.mp3"},{"title":"Puppet","src":"audio/of-embla/r-04-puppet.mp3"},{"title":"Right Side of the Tracks","src":"audio/of-embla/r-05-right-side-of-the-tracks.mp3"},{"title":"Shadowplay","src":"audio/of-embla/r-06-shadowplay.mp3"}]' data-albums='[{"name":"R","tracks":[{"title":"Walking Dead","src":"audio/of-embla/r-01-walking-dead.mp3"},{"title":"Without you","src":"audio/of-embla/r-02-without-you.mp3"},{"title":"5 Minutes","src":"audio/of-embla/r-03-5-minutes.mp3"},{"title":"Puppet","src":"audio/of-embla/r-04-puppet.mp3"},{"title":"Right Side of the Tracks","src":"audio/of-embla/r-05-right-side-of-the-tracks.mp3"},{"title":"Shadowplay","src":"audio/of-embla/r-06-shadowplay.mp3"}]},{"name":"Phases","tracks":[{"title":"Into the Mountain","src":"audio/of-embla/phases-01-into-the-mountain.mp3"},{"title":"Burning Sea","src":"audio/of-embla/phases-02-burning-sea.mp3"},{"title":"Phases","src":"audio/of-embla/phases-03-phases.mp3"},{"title":"Steady","src":"audio/of-embla/phases-04-steady.mp3"},{"title":"Psychokinetic Superhero","src":"audio/of-embla/phases-05-psychokinetic-superhero.mp3"},{"title":"Here","src":"audio/of-embla/phases-06-here.mp3"},{"title":"Invisible","src":"audio/of-embla/phases-07-invisible.mp3"}]}]'>
+                    <img src="images/of-embla.jpg" alt="Of Embla">
+                </div>
+            </div>
+
+            <div class="solo-project">
+                <h3 class="subsection-title">Stone Birds</h3>
+                <div class="stone-birds-photo" data-tracks='[{"title":"Slowburn","src":"audio/stone-birds/01-slowburn.mp3"}]'>
+                    <img src="images/stone-birds.jpg" alt="Stone Birds">
+                </div>
+            </div>
+
+            <div class="solo-project">
+                <h3 class="subsection-title">The Thread</h3>
+                <div class="the-thread-photo" data-tracks='[{"title":"Cant feel you","src":"audio/the-thread-cant-feel-you.mp3"}]'>
+                    <img src="images/the-thread-cover.jpg" alt="The Thread">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section about" id="about">
+        <h2 class="section-title">About</h2>
+        <div class="about-content">
+            <p>I tell stories through music. The process should be fun. Let's find out where we end up.</p>
+            <div class="about-links">
+                <a href="https://www.imdb.com/name/nm8362146/" target="_blank" rel="noopener">IMDB</a>
+                <a href="https://www.instagram.com/nickathens/" target="_blank" rel="noopener">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-content">
+            <a href="mailto:nick@onetwo-music.com" class="contact-email">nick@onetwo-music.com</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <span>&copy; 2025 Nick Athens</span>
+    </footer>
+
+    <!-- Audio Player -->
+    <div class="audio-player" id="audioPlayer">
+        <div class="audio-player-header">
+            <span class="audio-player-project" id="audioPlayerProject">Film Score</span>
+            <button class="audio-player-close" id="audioPlayerClose">&times;</button>
+        </div>
+        <div class="audio-player-track">
+            <div class="audio-player-title" id="audioPlayerTitle">Track Title</div>
+            <div class="audio-player-info" id="audioPlayerInfo">1 of 10</div>
+            <div class="audio-player-progress" id="audioPlayerProgress">
+                <div class="audio-player-progress-bar" id="audioPlayerProgressBar"></div>
+            </div>
+            <div class="audio-player-times">
+                <span id="audioPlayerCurrent">0:00</span>
+                <span id="audioPlayerDuration">0:00</span>
+            </div>
+            <div class="audio-player-controls">
+                <button class="audio-player-btn prev-btn" id="audioPlayerPrev">
+                    <svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+                </button>
+                <button class="audio-player-btn play-btn" id="audioPlayerPlay">
+                    <svg viewBox="0 0 24 24" class="play-icon"><path d="M8 5v14l11-7z"/></svg>
+                    <svg viewBox="0 0 24 24" class="pause-icon" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </button>
+                <button class="audio-player-btn next-btn" id="audioPlayerNext">
+                    <svg viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+                </button>
+            </div>
+            <div class="audio-player-volume">
+                <svg class="volume-icon" id="playerVolumeIcon" viewBox="0 0 24 24" style="cursor: pointer">
+                    <path class="speaker" d="M3 9v6h4l5 5V4L7 9H3z"/>
+                    <path class="waves" d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+                    <path class="muted" d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" style="display:none"/>
+                </svg>
+                <input type="range" class="volume-slider" id="audioPlayerVolume" min="0" max="100" value="50">
+            </div>
+        </div>
+        <div class="audio-player-playlist" id="audioPlayerPlaylist"></div>
+    </div>
+    <audio id="audioElement"></audio>
+
+    <!-- Synth Manual (hidden until discovered) -->
+    <div class="synth-manual" id="synthManual">
+        <div class="synth-manual-content">
+            <button class="synth-manual-close" id="synthManualClose">&times;</button>
+            <h3>Grid Synth</h3>
+            <p class="synth-manual-intro">You found the hidden synth. The grid plays orchestral tuning tones.</p>
+            <div class="synth-manual-controls">
+                <div class="synth-manual-item">
+                    <span class="synth-manual-gesture">Click & Hold</span>
+                    <span class="synth-manual-effect">Play note (sustains while held)</span>
+                </div>
+                <div class="synth-manual-item">
+                    <span class="synth-manual-gesture">Drag Down</span>
+                    <span class="synth-manual-effect">Close filter (darker tone)</span>
+                </div>
+                <div class="synth-manual-item">
+                    <span class="synth-manual-gesture">Drag Up</span>
+                    <span class="synth-manual-effect">Open filter (brighter tone)</span>
+                </div>
+                <div class="synth-manual-item">
+                    <span class="synth-manual-gesture">Drag Left/Right</span>
+                    <span class="synth-manual-effect">Pitch bend (5ths up/down)</span>
+                </div>
+            </div>
+            <h4>Smart Harmony</h4>
+            <div class="synth-manual-chords">
+                <div class="synth-manual-item">
+                    <span class="synth-manual-chord">Off (default)</span>
+                    <span class="synth-manual-effect">Single notes only</span>
+                </div>
+                <div class="synth-manual-item">
+                    <span class="synth-manual-chord">On</span>
+                    <span class="synth-manual-effect">Notes build intelligent chords based on what's already playing</span>
+                </div>
+            </div>
+            <p class="synth-manual-harmony-note">Fred again.. style harmonies: minor 6ths for melancholy, perfect 5ths for power, minor 2nds for grit. Modal and ambiguous - never too clean. Density-aware voicing keeps textures from getting muddy.</p>
+            <p class="synth-manual-tip">Color follows sound: vertical = warmth, horizontal = brightness</p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
