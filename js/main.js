@@ -600,17 +600,11 @@ function initHeroGrid() {
         const cell = document.createElement('div');
         cell.className = 'cell';
 
-        // Center cell gets the logo
+        // Center cell - interactive (triggers wave pattern on click)
         if (i === centerIndex) {
             cell.classList.add('logo-cell');
-            // Use img tag for animated webp
-            const logoImg = document.createElement('img');
-            logoImg.src = 'images/logo-animated.webp';
-            logoImg.alt = 'Nick Athens';
-            logoImg.className = 'logo-img';
-            cell.appendChild(logoImg);
 
-            // Click logo to trigger wave pattern
+            // Click center to trigger wave pattern
             cell.style.cursor = 'pointer';
             cell.addEventListener('click', (e) => {
                 e.preventDefault();
